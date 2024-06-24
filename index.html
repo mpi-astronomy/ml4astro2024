@@ -1,110 +1,291 @@
-
 <!DOCTYPE html>
+<html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <meta charset="utf-8" />
-    <title>Welcome to No Errors Test Project’s documentation! &#8212; No Errors Test Project  documentation</title>
-    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/language_data.js"></script>
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-   
-  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
-  
-  
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title> ML4ASTRO </title>
 
-  </head><body>
-  
+    <!-- favicon -->
+    <link href="" rel=icon>
 
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
-          
+    <!-- Bootstrap -->
+    <link rel=stylesheet href=https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css integrity="sha512-W0xM4mr6dEP9nREo7Z9z+9X70wytKvMGeDsj7ps2+xg5QPrEBXC8tAW1IFnzjR6eoJ90JmCnFzerQJTLzIEHjA==" crossorigin=anonymous media=print onload="this.media='all'">
+    <link rel=stylesheet href=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/github.min.css crossorigin=anonymous title=hl-light media=print onload="this.media='all'">
+    <link rel=stylesheet href=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/dracula.min.css crossorigin=anonymous title=hl-dark media=print onload="this.media='all'" disabled>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js integrity crossorigin=anonymous async></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-          <div class="body" role="main">
-            
-  <div class="section" id="welcome-to-no-errors-test-project-s-documentation">
-<h1>Welcome to No Errors Test Project’s documentation!<a class="headerlink" href="#welcome-to-no-errors-test-project-s-documentation" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
-</div>
-</div>
-<div class="section" id="indices-and-tables">
-<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
-<ul class="simple">
-<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
-<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
-<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
-</ul>
-</div>
+    <!-- Style CSS -->
+    <link href="css/style.css" rel="stylesheet">
 
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
 
-          </div>
-          
+<body id="page-top" data-spy="scroll" data-target=".navbar">
+    <div id="main-wrapper">
+        <!-- Page Preloader -->
+        <div id="preloader">
+            <div id="status">
+                <div class="status-mes"></div>
+            </div>
         </div>
-      </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
-<h1 class="logo"><a href="#">No Errors Test Project</a></h1>
 
+        <header class="header">
+            <!-- Navigation -->
+            <nav class="navbar main-menu" role="navigation">
+                <div class="container">
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                        <ul class="nav navbar-nav" style="display: flex;flex-wrap: wrap;flex-direction: row;align-content: center;justify-content: space-evenly;">
+                            <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                            <li class="hidden"><a href="#page-top"></a></li>
+                            <li><a class="page-scroll" href="#page-top">Home</a></li>
+                            <li><a class="page-scroll" href="#section-overview">Overview</a></li>
+<li><a class="page-scroll" href="#section-organizers">Organizers</a></li>
+<li><a class="page-scroll" href="#section-participants">Participants</a></li>
+<li><a class="page-scroll" href="#section-programme">Programme</a></li>
+<li><a class="page-scroll" href="#section-venue-bosch">Venue</a></li>
+<li><a class="page-scroll" href="#section-logistics">Logistics</a></li>
+<li><a class="page-scroll" href="#section-code-of-conduct">Code of conduct</a></li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container -->
+            </nav>
+            <!-- .nav -->
+        </header>
 
+        <div class="jumbotron text-center" id="page-top">
+            <div class="content">
+                <div class="event-date" style="text-shadow: 0px 1px 12px black;"> June 25, 2024 <br><br>Studio Villa Bosch, Heidelberg, Germany</div><br>
+                <h1 style="text-shadow: 0px 1px 12px black;"> ML4ASTRO </h1>
+                <br><br>
+                <p class="lead" style="text-shadow: 0px 1px 12px black;"> Machine Learning in Astrophysical studies </p>
+                <br><br>
+                <a href><img src="static/img/ml4astro_logos.svg" width="50%" alt=""></a>
+            </div>
+        </div>
+        <!-- .Jumbotron-->
 
-
-
-
-
-
-<h3>Navigation</h3>
-
-<div class="relations">
-<h3>Related Topics</h3>
+        <!-- Section template -->
+<section id="section-overview" class="section-wrapper overview ">
+    <div class="container">
+        <div class="row">
+            <div class="section-title">
+                <h1> Overview </h1>
+            </div>
+            <div class="col-md-12">
+                    <p>The workshop's theme is the application of machine learning to solve astrophysical problems. This event will be a one-day workshop and unconference, where we will discuss and learn from each other about applying techniques to solve very similar problems in various contexts. We hope this workshop could lead to some new collaborations or initial joint studies. We will dedicate a significant amount of time to unconference sessions and informal discussions.</p>
+            </div>
+        </div>
+    </div>
+</section><!-- Section template -->
+<section id="section-organizers" class="section-wrapper organizers gray-bg">
+    <div class="container">
+        <div class="row">
+            <div class="section-title">
+                <h1> Organizers </h1>
+            </div>
+            <div class="col-md-12">
+                    <div class="col-md-12" style="text-align:center;">
+<p><img src="static/img/ml4astro_logos.svg" alt="logos" width="75%"></p>
 <ul>
-  <li><a href="#">Documentation overview</a><ul>
-  </ul></li>
+<li>Tobias Buck (IWR)</li>
+<li>Morgan Fouesneau (MPIA)</li>
+<li>Guillaume Guiglion (ZAH/LSW, MPIA)</li>
+<li>Ralf Klessen (ZAH/ITA)</li>
+<li>Annalisa Pillepich (MPIA)</li>
+<li>Kai Polsterer (HITS)</li>
 </ul>
+<p><a href="mailto:fouesneau@mpia.de,tobias.buck@iwr.uni-heidelberg.de,klessen@uni-heidelberg.de,pillepich@mpia.de,Kai.Polsterer@h-its.org,guiguiglion@gmail.com" aria-label=envelope>
+<i class="fas fa-envelope big-icon" style="font-size:36px;"></i>
+</a></p>
 </div>
-<div id="searchbox" style="display: none" role="search">
-  <h3 id="searchlabel">Quick search</h3>
-    <div class="searchformwrapper">
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" aria-labelledby="searchlabel" />
-      <input type="submit" value="Go" />
-    </form>
-    </div>
-</div>
-<script>$('#searchbox').show(0);</script>
-
-
-
-
-
-
-
-
+            </div>
         </div>
-      </div>
-      <div class="clearer"></div>
     </div>
-    <div class="footer">
-      &copy;2019, sphinx-action Test Suite.
-      
-      |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.4.4</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
-      
-      |
-      <a href="_sources/index.rst.txt"
-          rel="nofollow">Page source</a>
+</section><!-- Section template -->
+<section id="section-participants" class="section-wrapper participants ">
+    <div class="container">
+        <div class="row">
+            <div class="section-title">
+                <h1> Participants </h1>
+            </div>
+            <div class="col-md-12">
+                    <p><i class="fa-solid fa-people-group"></i> The registration is <strong>closed</strong>.
+Use the following <a href="https://docs.google.com/forms/d/e/1FAIpQLSdhCUFpCWVvTqNe5NwBNGhlBtphch1uWTBkIusDcVPBu5KhyQ/viewform?usp=sf_link">link</a> to register.</p>
+<h2><i class="fa-solid fa-envelope-open-text"></i> Participants notified on <strong>May 30</strong>.</h2>
+<p><i class="fa-solid fa-circle-check"></i> Participation confirmation by <strong>June 15</strong>.</p>
+<ul>
+<li>There are no registration fees to participate in this workshop. (See logistics)</li>
+</ul>
+<p><i class="fa-solid fa-file-shield"></i> Any personal data you provide will be processed in accordance with the Max Planck Institute for Astronomy <a href="http://www.mpia.de/privacy-policy">privacy policy</a>.</p>
+<p><em>We will later list here the participants of the workshop, and we will add a group picture.</em></p>
+            </div>
+        </div>
     </div>
+</section><section id="section-programme" class="section-wrapper programme gray-bg">
+    <div class="container">
+        <div class="row">
+            <div class="section-title">
+                <h1> Programme </h1>
+            </div>
+            <div class="col-md-12">
+                <p><i class="fa-regular fa-calendar" style="font-size:26px";></i> <em>The program is a template and will be updated soon.</em></p>
+                <h2 id="day-Tuesday">Tuesday</h2>
+08:30 - 09:00 <font color="0080FF">Participants arrival</font> <br>
+<span style="display:inline-block; width: 6em;"></span><i>Registration, name tags, etc.</i><br>
+09:00 - 9:30 <font color="0080FF">boot-up</font> <br>
+<span style="display:inline-block; width: 6em;"></span><i>Welcome and opening remarks</i><br>
+09:30 - 11:00 <font color="0080FF">Pitch talks</font> <br>
+<span style="display:inline-block; width: 6em;"></span><i>Rapid presentations to set ML in the astronomy context</i><br>
+<span style="display:inline-block; width: 6em;"></span><i>  * Nikos Gianniotis: An Introduction to Machine Learning</i><br>
+<span style="display:inline-block; width: 6em;"></span><i>  * Rebecca Kuntz: Bayesian Statistics and Information Geometry</i><br>
+<span style="display:inline-block; width: 6em;"></span><i>  * William Oliver and Tristan Cantat: Clustering in Astrophysics</i><br>
+<span style="display:inline-block; width: 6em;"></span><i>  * Laura Martinez: Contrastive Learning for images</i><br>
+<span style="display:inline-block; width: 6em;"></span><i>  * Gregory Green and Guillaume Guiglion: ML for stellar spectra</i><br>
+<span style="display:inline-block; width: 6em;"></span><i>  * Giuseppe viterbo: simulation-based inference</i><br>
+11:00 - 11:30 <font color="0080FF">Coffee break</font> <br>
+11:30 - 12:30 <font color="0080FF">Rapid-fire discussions</font> <br>
+<span style="display:inline-block; width: 6em;"></span><i>Participants will be divided into small groups to discuss their research interests and potential collaborations.</i><br>
+12:30 - 13:50 <font color="0080FF">Lunch break</font> <br>
+13:50 - 14:00 <font color="0080FF">Daily Unconference Planning</font> <br>
+<span style="display:inline-block; width: 6em;"></span><i>Unconference topic selection and room allocation</i><br>
+14:00 - 15:00 <font color="0080FF">Unconference</font> <br>
+<span style="display:inline-block; width: 6em;"></span><i>two to three parallel sessions on topics</i><br>
+15:00 - 15:30 <font color="0080FF">Coffee break</font> <br>
+15:30 - 16:30 <font color="0080FF">Unconference</font> <br>
+<span style="display:inline-block; width: 6em;"></span><i>two to three parallel sessions on topics</i><br>
+16:30 - 17:00 <font color="0080FF">Coffee break</font> <br>
+17:00 - 18:00 <font color="0080FF">Wrap-up</font> <br>
+<span style="display:inline-block; width: 6em;"></span><i>Reports on the unconference sessions. Sharing results and feedback.</i><br>
+            </div>
+        </div>
+    </div>
+</section><!-- Section template -->
+<section id="section-venue-bosch" class="section-wrapper venue-bosch ">
+    <div class="container">
+        <div class="row">
+            <div class="section-title">
+                <h1> Venue </h1>
+            </div>
+            <div class="col-md-12">
+                    <p>The event will be held at the <a href="https://www.studio-villa-bosch.de/">Studio Villa Bosch</a> in Heidelberg. The Villa Bosch is an historical building and the studio building located in the garden of Villa is a modern, barrier-free conference center.</p>
+<h2>Accessibility</h2>
+<p>The Studio is accessible to disabled persons, and dedicated parking spaces are available. Don't hesitate to contact us if you need any assistance or have any questions.</p>
+<p><img src="https://www.studio-villa-bosch.de/studiovillabosch_files/slider1-w1440h880.jpg" alt="venue" width=360px style="float: right;"></p>
+<h2>Address</h2>
+<p><strong>Tagungszentrum Studio Villa Bosch</strong></p>
+<p>Schloss-Wolfsbrunnenweg 33</p>
+<p>69118 Heidelberg, Germany</p>
+<p><a href="https://maps.app.goo.gl/pY7UwYqqk7TGZR4r5"><i class="fa-solid fa-map-location-dot" style="font-size:48px;"></i></a></p>
+            </div>
+        </div>
+    </div>
+</section><!-- Section template -->
+<section id="section-logistics" class="section-wrapper logistics gray-bg">
+    <div class="container">
+        <div class="row">
+            <div class="section-title">
+                <h1> Logistics </h1>
+            </div>
+            <div class="col-md-12">
+                    <p>The Event will start at 09:00 on Tuesday, June 25 2025, and finish at 18:00.</p>
+<p>Participants are responsible to reach the venue on their own.</p>
+<h2><i class="fa-solid fa-drumstick-bite"></i> Lunches &amp; Coffee Breaks</h2>
+<p>The event provides lunch and coffee breaks at the venue. Vegetarian options will be available (no need to pre-order). If you have any additional dietary requirements (and may not have indicated so in your registration form), please email <a href="mailto:Kai.Polsterer@h-its.org">Kai Polsterer</a> well in advance.</p>
+<h2><i class="fa-solid fa-universal-access"></i> Accessibility</h2>
+<p>We are committed to providing an accessible environment for all participants. If you need help or arrangements, don't hesitate to contact the organizers (or provide information through the registration form).</p>
+<p>Participants will pay attention not to leave out information for some people in your audience.
+Some of us might not be able to see well, hear well, move well, speak well, or understand information presented in some ways well or at all.
+Everyone at the event will be open to diversity in the audience and any accessibility issues.
+The <a href="https://www.w3.org/WAI/teach-advocate/accessible-presentations/">Web Accessibility Initiative</a> provides some information &amp; directions.</p>
+<h2><i class="fa-solid fa-comments"></i> Communications</h2>
+<p>This workshop is an in-person event only.</p>
+<p>We will also use TBD to foster communication and collaboration among participants and beyond the event. We will provide more information on this in the coming weeks.</p>
+            </div>
+        </div>
+    </div>
+</section><!-- Section template -->
+<section id="section-code-of-conduct" class="section-wrapper code-of-conduct ">
+    <div class="container">
+        <div class="row">
+            <div class="section-title">
+                <h1> Code of conduct </h1>
+            </div>
+            <div class="col-md-12">
+                    <div style="text-align:center;">
+<svg aria-hidden="true" height="40" viewBox="0 0 16 16" version="1.1" width="40" data-view-component="true" class="octicon octicon-code-of-conduct mr-2">
+    <path fill-rule="evenodd" d="M8.048 2.241c.964-.709 2.079-1.238 3.325-1.241a4.613 4.613 0 013.282 1.355c.41.408.757.86.996 1.428.238.568.348 1.206.347 1.968 0 2.193-1.505 4.254-3.081 5.862-1.496 1.526-3.213 2.796-4.249 3.563l-.22.163a.75.75 0 01-.895 0l-.221-.163c-1.036-.767-2.753-2.037-4.249-3.563C1.51 10.008.007 7.952.002 5.762a4.614 4.614 0 011.353-3.407C3.123.585 6.223.537 8.048 2.24zm-1.153.983c-.81.78-1.546 1.669-2.166 2.417-.184.222-.358.432-.52.623a.75.75 0 00.04 1.016c.35.35.697.697 1.043 1.047.866.875 2.292.914 3.185.032.264-.26.534-.528.802-.797.694-.694 1.8-.701 2.474-.03L12.92 8.7l.283.284c-.244.334-.515.666-.81.995l-1.384-1.28A.75.75 0 109.99 9.802l1.357 1.252c-.325.31-.656.606-.984.887l-1.48-1.366a.75.75 0 10-1.018 1.102L9.191 12.9c-.433.34-.838.643-1.191.905-1.04-.773-2.537-1.907-3.846-3.242C2.611 8.99 1.502 7.306 1.502 5.75a3.114 3.114 0 01.913-2.335c1.159-1.158 3.23-1.224 4.48-.191zm7.112 4.442c.313-.65.491-1.293.491-1.916v-.001c0-.614-.088-1.045-.23-1.385-.143-.339-.357-.633-.673-.949a3.113 3.113 0 00-2.218-.915c-1.092.003-2.165.627-3.226 1.602-.823.755-1.554 1.637-2.228 2.45l-.127.154.562.566a.756.756 0 001.066.02l.794-.79c1.258-1.258 3.312-1.31 4.594-.032.396.394.792.791 1.173 1.173l.022.023z"></path>
+</svg>
+</div>
+<p>During the event, we require participants to follow the code of conduct which can be found below. If you have any questions about the event, you can reach the organizing committee.</p>
+<p>The organizers are dedicated to providing a harassment-free conference experience for everyone, regardless of gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, ethnicity, religion (or lack thereof), or technology choices. We do not tolerate harassment, abusive behavior, or intimidation of conference participants in any form.  As such, we follow <a href="https://eas.unige.ch/documents/EAS_Ethics_Statement.pdf">the European Astronomical Society Council (EAS) Ethics Statement and Guidelines for Good Practice</a> and expect all participants to read and abide by their statements.</p>
+<p>In addition to a general Code of Conduct and Ethics, all participants must agree with our collaboration policy: i.e., to openly share their ideas, expertise, code, and interim results. Project development will proceed out in the open among participants.</p>
+<p>Participants are encouraged to change gears, start new collaborations, and drop or combine projects. Any participant contributing significantly to a project can expect appropriate credit vessels (e.g., co-authorship).</p>
+<p>We pledge to help the entire community follow the code of conduct, and to not remain silent when we see violations of the code of conduct. We will take action when members of our community violate this code such as notifying a workshop organizer or talking privately with the person.
+This code of conduct applies to all community situations online and offline, including the conference itself, mailing lists, forums, social media, social events associates with the conference, and one-to-one interactions.</p>
+<p>Participants asked to stop any harassing behavior are expected to comply immediately. Attendees violating these rules may be asked to leave the event at the sole discretion of the conference organizers.</p>
+            </div>
+        </div>
+    </div>
+</section>
+        <!-- .about-event -->
 
-    
+    <footer class="footer">
+        <div class="copyright-section">
+            <div class="container">
+                <div class="col-md-12">
+                    <div class="copytext text-center"><br>
+                        <ul class=network-icon aria-hidden=true>
+                            <li>
+                                <a href=}} aria-label=envelope>
+                                    <i class="fas fa-envelope big-icon" style="font-size:36px;"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="copytext text-center">
+                            &copy Conference.
+                            This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
+                            <br>
+                        <a href="http://www.mpia.de/imprint" target="_blank">imprint</a>,
+                        <a href="http://www.mpia.de/privacy-policy" target="_blank">privacy policy</a>
+                        <br>
+                        <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
+                            <i class="fab fa-creative-commons fa-2x" aria-hidden="true"></i>
+                            <i class="fab fa-creative-commons-by fa-2x" aria-hidden="true"></i>
+                            <i class="fab fa-creative-commons-nc fa-2x" aria-hidden="true"></i>
+                            <i class="fab fa-creative-commons-nd fa-2x" aria-hidden="true"></i>
+                            </a>
+                    </div>
+                </div>
+            </div>
+            <!-- .container -->
+        </div>
+        <!-- .copyright-section -->
+    </footer>
+    <!-- .footer -->
 
-    
-  </body>
+    </div>
+    <!-- #main-wrapper -->
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
 </html>
